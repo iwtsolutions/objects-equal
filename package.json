@@ -1,0 +1,39 @@
+{
+  "name": "objects-equal",
+  "version": "0.0.2",
+  "main": "./index.js",
+  "author": {
+    "name": "ArtskydJ, IWT",
+  },
+  "description": "Checks if two objects have the same keys and properties",
+  "keywords": [
+    "object",
+    "equal",
+    "keys",
+    "properties"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArtskydJ/objects-equal.git"
+  },
+  "devDependencies": {
+    "tap": "~0.4.8"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap ./test/*.js"
+  },
+  "dependencies": {},
+  "readme": "objects-equal\r\n=============\r\n\r\n[![Build Status](https://travis-ci.org/ArtskydJ/objects-equal.svg?branch=master)](https://travis-ci.org/ArtskydJ/objects-equal)\r\n\r\n- [Install](https://github.com/ArtskydJ/objects-equal#install)\r\n- [Require](https://github.com/ArtskydJ/objects-equal#require)\r\n- [Examples](https://github.com/ArtskydJ/objects-equal#examples)\r\n- [License](https://github.com/ArtskydJ/objects-equal#license)\r\n\r\n##Install\r\n\tnpm install objects-equal\r\n\t\r\n##Require\r\n\tvar areEqual = require('objects-equal')\r\n\r\n##Examples\r\n\r\n\tareEqual( {hi: 4, no: 2},   {hi: 4, no: 2} ) // -> true, Exact objects\r\n\tareEqual( {hi: 4, no: 2},   {no: 2, hi: 4} ) // -> true, Properties out of order\r\n\tareEqual( {hi: 4, sad: 0},   {hi: 4} )       // -> false, Extra property in first object\r\n\tareEqual( {hi: 4},   {hi: 4, sad: 0} )       // -> false, Extra property in second object\r\n\tareEqual( {},   {} )                         // -> true, Empty objects\r\n\tareEqual( {um: 1},   {um: 3} )               // -> false, Different values inside a property\r\n\tareEqual( {hi: {no: 2}},   {hi: {no: 2}} )   // -> true, Deeper search, exact objects\r\n\tareEqual( {hi: {no: 2}},   {hi: {no: 3}} )   // -> false, Deeper search, different property value\r\n\r\n##License\r\n\r\n[MIT](http://opensource.org/licenses/MIT)\r\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/ArtskydJ/objects-equal/issues"
+  },
+  "homepage": "https://github.com/ArtskydJ/objects-equal",
+  "_id": "objects-equal@0.0.2",
+  "_shasum": "9884d52465cf524bb4b73a8a531f7bbf9d72c2d4",
+  "_resolved": "git+https://github.com/ArtskydJ/objects-equal.git#fd28c11620518c44f883cda0457e4e66f5a3ca2f",
+  "_from": "objects-equal@git+https://github.com/ArtskydJ/objects-equal.git#fd28c11"
+}
