@@ -1,9 +1,9 @@
 {
   "name": "objects-equal",
-  "version": "0.0.2-iwtsolutions.1",
+  "version": "0.0.2-iwtsolutions.2",
   "main": "./index.js",
   "author": {
-    "name": "ArtskydJ, IWT",
+    "name": "ArtskydJ, IWT"
   },
   "description": "Checks if two objects have the same keys and properties",
   "keywords": [
